@@ -112,12 +112,14 @@
             margin: 30px 0;
         }
 
-        .section h2 {
+        
+        .section-title {
             font-size: 30px;
             color: #a2a2a2;
             text-shadow: 0 0 20px #fff;
             animation: flash 2s infinite;
         }
+
 
         @keyframes flash {
             0%, 100% { text-shadow: 0 0 10px #00ed37; }
@@ -160,6 +162,44 @@
             font-weight: bold;
             text-shadow: 0 0 5px #ff0000;
         }
+        @media (max-width: 768px) {
+            .bg-right,
+            .bg-left {
+                display: none; /* إخفاء الخلفيات الجانبية */
+            }
+
+            .name {
+                font-size: 40px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .leader-text {
+                font-size: 20px;
+                margin-top: 20px;
+                padding: 8px;
+            }
+
+            .city {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -173,7 +213,8 @@
     </div>
     <div class="content">
         <div class="section">
-            <h2>نبذة عني:</h2>
+            <h2 class="section-title">نبذة عني:</h2>
+
             <p>
                 أنا لست هاكرًا، ولا حتى مبرمجًا... أنا مجرد شخص عادي. شخص يرى العالم بعين مختلفة، يسمع همسات الأكواد في الصمت، ويدرك أن كل نظام، مهما بدا قويًا، يخفي بداخله نقطة ضعف تنتظر من يكتشفها. لم أتعلم هذه الأشياء لأكون مثلهم... بل لأكون نفسي شخص لا يتبع القواعد، بل يعيد كتابتها بطريقته.
             </p>
